@@ -1,0 +1,97 @@
+/* inter-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/inter-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html{
+    height: 100vh;
+}
+body{
+    height: 100vh;
+    font-family: "Inter";
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+  }
+  .card{
+    background-color: #1F1F1F;
+    padding: 40px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card__img{
+    width: 88px;
+    margin-bottom: 24px;
+  }
+  .card__name{
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 4px;
+  }
+  .card__location{
+    color: #C4F82A;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    padding-bottom: 24px;
+  }
+  .card__desc{
+    color: #fff;
+    line-height: 21px;
+    font-size: 14px;
+    padding-bottom: 24px;
+  }
+  .card__link{
+    width: 304px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #333333;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 21px;
+    text-decoration: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    transition: .3s;
+  }
+  .card__link:hover{
+    background-color: #C4F82A;
+    color: #333333;
+  }
+  .card__link:last-child{
+    margin-bottom: 0px;
+  }
